@@ -1,19 +1,1 @@
-for AddPathAndDir=1:1%% add to pathc
-% add libraries of New PC
-addpath(genpath('C:\Users\netas\OneDrive\Documents\GitHub\Ephys2021\DeepLabCut'));
-addpath(genpath('C:\Users\netas\OneDrive\Documents\GitHub\Ephys2021\Field Trip Neuralynx'));
-addpath(genpath('C:\Users\netas\OneDrive\Documents\GitHub\Ephys2021\NeuralynxMatlabImportExport_v6.0.0'));
-% add libraries of old PC
-addpath(genpath('C:\Users\netas\Documents\GitHub\InVivo_Ephys\NeuralynxMatlabImportExport_v6.0.0'));
-addpath(genpath('C:\Users\netas\Documents\GitHub\InVivo_Ephys\Field Trip Neuralynx'));
-addpath(genpath('C:\Users\netas\Documents\GitHub\InVivo_Ephys\DeepLabCut'));
 
-%% find files location
-if exist('D:')
-Variables.ComputerDir='D:';
-else % if you cant find any data drives, use the example recording on this pc
-Variables.ComputerDir='C:\Users\netas\Documents\Lammel lab\Obesity paper\EXPERIMENTS\Single units\Data for testing';
-end
-end; clear AddPathAndDir
-CountGood=0;
-CountBad=0;
